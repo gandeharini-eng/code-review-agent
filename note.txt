@@ -1,0 +1,3 @@
+git init
+echo ".venv/\n__pycache__/\n*.pyc\n.env\nvector_store/\nnode_modules/\ngenerated_reports/\nuploads/" > .gitignore
+
