@@ -16,7 +16,8 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 from backend.rag.retriever import RAGRetriever
 from backend.mcp_client.client import CodeReviewMCPClient
 
-load_dotenv()
+from pathlib import Path
+load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
 # ─── Data Models ─────────────────────────────────────
 
